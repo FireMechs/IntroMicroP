@@ -8,7 +8,7 @@ BACK:
 	ACALL DELAY ; call delay
 	SJMP BACK ;return to BACK
 DELAY: 
-	MOV R7,#050D ; execute the program 100 times
+	MOV R7,#050D ; execute the program 50 times
 	BACK1: 
 		MOV TMOD,#01H ; initialize timer mode to 1
 		MOV TH0,#0DBH ; store count 10ms 
